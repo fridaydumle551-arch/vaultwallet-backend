@@ -4,7 +4,7 @@
    ============================================ */
 
 // CONFIG: Change this to your backend URL when deployed
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://vaultwallet-backend.onrender.com';
 // const API_BASE_URL = 'https://your-app.onrender.com/api'; // Production
 
 const CURRENCIES = {
