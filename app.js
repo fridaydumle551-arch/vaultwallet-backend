@@ -442,7 +442,9 @@ async function searchContacts(query) {
     }
 
     // Search via backend API
-    const result = await apiRequest('/users/search?q=' + encodeURIComponent(query));
+    const result = await apiRequest('/user/search?q=' + encodeURIComponent(query));
+const existsResult = await apiRequest('/user/exists/' + encodeURIComponent(username));
+   
 
     if (!result.success || !result.users) {
         suggestions.innerHTML = '';
